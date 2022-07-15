@@ -13,7 +13,7 @@ services:
   postgres:
     image: postgres
     environment:
-      POSTGRES_PASSWORD: postgres_password
+      POSTGRES_PASSWORD: postgres_p
   redis:
     image: redis
   api:
@@ -29,7 +29,7 @@ services:
       - PG_USER=postgres
       - PG_HOST=postgres
       - PG_DATABASE=postgres
-      - PG_PASSWORD=postgres_password
+      - PG_PASSWORD=postgres_p
       - PG_PORT=5432
   worker:
     build:
